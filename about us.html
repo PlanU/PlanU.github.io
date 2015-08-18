@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	
+	<!--menu-->
+	<link rel="stylesheet" type="text/css" href="menustyle (1).css">
+		<!--menustylee.css- styling sheet for words-->
+	<link rel="stylesheet" type="text/css" href="stylesheetproject1.css">
+
+
+
+
+
+
+
+
+<!--Java script, that makes menu move-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script>
+	$(document).ready(function() {
+		$menuLeft = $('.pushmenu-left');
+		$nav_list = $('#nav_list');
+		
+		$nav_list.click(function() {
+			$(this).toggleClass('active');
+			$('.pushmenu-push').toggleClass('pushmenu-push-toright');
+			$menuLeft.toggleClass('pushmenu-open');
+		});
+	});
+	</script>
+
+<link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/grand-hotel" rel="stylesheet" type="text/css"/>
+
+
+
+
+	<link rel="stylesheet" type = "text/css" href = "Webpage Basic - CSS.css"/>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Comfortaa">
+	
+
+</head>
+
+<style>
+html{
+	background-color: #403f3f;
+}
+body{
+	background-color:#403f3f;
+}
+
+p{
+	color: white;
+	background-color: #403f3f;
+	font-family: Comfortaa;
+	text-align: center;
+	font-size: 120%;
+}
+
+h1{
+  color: #ffffff;
+  font-family: Comfortaa;
+  font-size: 770%;
+  font-weight: bold;
+
+ }
+
+ h2
+ {
+ 	color: #3b71c1;
+ 	font-family: 'GrandHotelRegular'; 
+ 	font-size: 360%;
+   	font-weight: normal; 
+   	font-style: normal; 
+
+ }
+</style>
+
+
+
+<body>
+
+
+<div data-role = "page" id = "homepage">
+<!--THE MENU-->
+<body class="pushmenu-push">
+  <nav class="pushmenu pushmenu-left">
+    <h3>Menu</h3>
+    <a href="mycalendar.html">My Calendar</a>
+    <a href="School2.html">My Schools</a>
+    <a href="Page2.html">My Tests</a>
+    <a href="about us.html">About Us</a> 
+   
+  </nav>
+  
+<div class="container">
+        <div class="main">
+        <section class="buttonset">
+            <div id="nav_list">Menu</div>
+        </section>
+      
+    <section class="content">
+   
+      
+    </section><!-- End Content -->
+
+  </div><!-- End Main -->
+</div><!-- End Container --> 
+
+<center> <h1> About Us </h1></center>
+
+<center><h2 id = "mission"> PlanU seeks to make the process of applying to college easier by having aplication dates and test dates all in one place on a calendar.  </h2></center>
+
+	<div id="slideShowImages">
+	<center>
+	<img src="http://i.imgur.com/cc3s85U.jpg" title="source: imgur.com" style="width:25%; height:40%" alt="Molly Caromody" />
+	<p>Molly is a 17 year old student from Lake Bluff Illinois. At the age of 10, along with her family, Molly moved to London, England for her Dad's job. There she attended an international school for five years, exploring the diverse culture o the city. After five years, Molly returned to Lake Bluff, joining a small all-girls school where she found her passion for math and science. Hearing about the Girls Who Code program from her family, she jumped at the chance to delve into Computer Science and further her coding understanding. As her senior year approaches, Molly hopes to further her love for STEM  and the knowledge gained through the coding experience </p>
+	<img src="http://i.imgur.com/Qc4yZ6T.jpg" title="source: imgur.com" style="width:25%; height:75%" alt="Mia Washington" />
+	<p>Mia Washington is a 17 year old student from South Bend, Indiana. She currently a senior at John Adams High School in South Bend, Indiana. My mom recognized my interest in technology and encouraged me to apply for Girls Who Code. Mia and her team worked together to create an application that helps college applicants organize their deadlines and requirements for applying. 
+
+	"As a senior in high school, I often get overwhelmed with the process of applying to college, so I wanted my team and I to create an app that could not just benefit others, but also me and my fellow team members," Mia said.</p>
+	<img src="http://i.imgur.com/taw15xJ.png" title="source: imgur.com" style="width:25%; height:50%" alt="Clare Kenny" />
+	<p>Clare Kenney is a 17 year old student from Kansas City. She is currently a senior at St. Teresa's Academy and will graduate in the spring of 2016. Clare's interest in science and technology led her to apply for Girls Who Code. As many of the team members are in the midst of the college process, Clare and her team felt that an application that organizes deadlines and lists the requirements for applying would help relieve the stress of the application process. Clare is confident that PlanU can help college applicants.
+		
+	"I knew I wanted to create an application for my final project that would help someone, so my confidence in PlanU's success stems from the fact that nearly 20 million or more people apply for college every year and many of them could use help relieving the stress of applying," Clare said. </p>
+	<img src="http://i.imgur.com/MmvOVnX.png" title="source: imgur.com" style="width:25%; height:50%" alt="Nina Onyemeziem" />
+	<p>Nina Onyemeziem is a 16 year old student from Chicago. She is currently a junior at St. Ignatius College Prep. She joined Girls Who Code to see where her interest for technology would take her despite the fact she had no previous experience with computer science. Plan U is an app that she was excited to help create because college seems like such a daunting subject, and she realized that it was more than necessary to help create something to ease the chaos that thrives during the college process. She hopes that this app will be a huge help to everyone going through this process, in addition to alleviating some of her fears about the process. Most importantly, she is very grateful that she was able to work on a successful project with her amazing team members</p>
+</body>
+
+<style>
+
+ h1{
+  color: #ffffff;
+  font-family: Comfortaa;
+  font-size: 770%;
+  font-weight: bold;
+
+ }
+
+</style>
+
+
+<section onclick = "Toggle()"><center> <h1> Help </h1></center>
+
+
+<p>
+How to Use:
+1) Login to your Gmail/google account
+2) Select the school(s) of your choice
+3) Click on events
+4) Click "copy to my calendar"
+<br>
+My Calendar: This page displays your personal google calendar with your added schools and tests deadlines.
+<br>
+My Schools: This page displays a list of schools and the calendar for the selected school. Simply search for a school, region, or state, to select a variety of schools. Scroll through the calendar to click on the events you wish to add to your personal calendar.
+<br>
+My Tests: This page displays ACT and SAT test deadlines. Simply click on ACT or SAT and scroll through the events to add to your personal calendar.
+</p>
