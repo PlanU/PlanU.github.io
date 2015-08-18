@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<!--HOMEPAGE CODE-->
+<!--the head-->
+<head>
+<!--this is the link that connects to the css page to decorate the webiste-->
+<link rel="stylesheet" type = "text/css" href = "Webpage Basic - CSS.css"/>
+
+<!--THE MENU-->
+<link rel="stylesheet" type="text/css" href="menustyle (1).css">
+		<!--menustylee.css- styling sheet for words-->
+	
+
+
+<!--Java script, that makes menu move-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script>
+	$(document).ready(function() {
+		$menuLeft = $('.pushmenu-left');
+		$nav_list = $('#nav_list');
+		
+		$nav_list.click(function() {
+			$(this).toggleClass('active');
+			$('.pushmenu-push').toggleClass('pushmenu-push-toright');
+			$menuLeft.toggleClass('pushmenu-open');
+		});
+	});
+	</script>
+
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Comfortaa">
+
+</head>
+
+<!--the body -->
+<!--the logo -->
+
+<div data-role = "page" id = "homepage">
+<!--THE MENU-->
+<body class="pushmenu-push">
+  <nav class="pushmenu pushmenu-left">
+    <h3>Menu</h3>
+    <a href="mycalendar.html">My Calendar</a>
+    <a href="School2.html">My Schools</a>
+    <a href="Page2.html">My Tests</a>
+    <a href="about us.html">About Us</a> 
+   
+  </nav>
+  
+<div class="container">
+        <div class="main">
+        <section class="buttonset">
+            <div id="nav_list">Menu</div>
+        </section>
+      
+    <section class="content">
+   
+      
+    </section><!-- End Content -->
+
+  </div><!-- End Main -->
+</div><!-- End Container --> 
+
+
+
+<script src='menu.js'></script>
+<p>
+<div style = "text-align: center" id = "logo">
+<img src="http://i.imgur.com/QycJzJq.png" title="source: imgur.com" alt="PlanU" style="width:70%;height:100%;">
+<br>
+<br>
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1" style="color: white">Email Address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="exampleInputPassword1" style="color: white">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">    
+    <p class="help-block" style="color: white">Remember my password?</p>
+  </div>
+  <div class="checkbox">
+    <label>
+     <input type="checkbox" style="color: white"> Yes
+     <input type="checkbox"style="color: white"> No
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Log in</button>
+  <style>
+  	
+  p{
+    font-family: Comfortaa;
+  }
+
+  label {
+   font-family: Comfortaa; 
+}
+
+input {
+  border: 2px solid;
+  border-color: transparent;
+  border-radius: 10px;
+}
+	button{
+  		width: 5%;
+  		table-layout: fixed;
+  		border-collapse: collapse;
+  		background-color: #666666;
+  		color: #FFFFFF;
+  		font-family: Comfortaa; 
+	}
+	button{
+		border-color:white;
+		border-top-style:solid;
+		border-color:#000000;
+		border-right-style:none;
+		border-bottom-style:solid;
+		border-left-style:none;
+		border-width:1px;
+		font-size: 13px
+	}
+
+	button:hover{
+		background-image:none;
+		background-color:#567E8C;
+	} 
+</form>
+
+
+</div>
+</p>
+
+</body>
+</html>
