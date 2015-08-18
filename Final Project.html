@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+api.cronofy.com/v1/calendars
+
+
+
+
+GET /v1/calendars HTTP/1.1
+Host: api.cronofy.com
+Authorization: Bearer {ACCESS_TOKEN}
+
+
+
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+{
+  "calendars": [
+    {
+      "provider_name": "google",
+      "profile_id": "pro_n23kjnwrw2",
+      "profile_name": "example@cronofy.com",
+      "calendar_id": "cal_n23kjnwrw2_jsdfjksn234"
+      "calendar_name": "Home",
+      "calendar_readonly": false,
+      "calendar_deleted": false
+    },
+    {
+      "provider_name": "google",
+      "profile_id": "pro_n23kjnwrw2",
+      "profile_name": "example@cronofy.com",
+      "calendar_id": "cal_n23kjnwrw2_n1k323nkj23"
+      "calendar_name": "Work",
+      "calendar_readonly": true,
+      "calendar_deleted": true
+    },
+    {
+      "provider_name": "apple",
+      "profile_id": "pro_n23kjnwrw2",
+      "profile_name": "example@cronofy.com",
+      "calendar_id": "cal_n23kjnwrw2_3nkj23wejk1"
+      "calendar_name": "Bank Holidays",
+      "calendar_readonly": true,
+      "calendar_deleted": false
+    }
+  ]
+}
+
+</body>
+</html>
