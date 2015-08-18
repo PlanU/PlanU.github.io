@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="menustyle (1).css">
+		<!--menustylee.css- styling sheet for words-->
+	
+
+<!--Java script, that makes menu move-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script>
+	$(document).ready(function() {
+		$menuLeft = $('.pushmenu-left');
+		$nav_list = $('#nav_list');
+		
+		$nav_list.click(function() {
+			$(this).toggleClass('active');
+			$('.pushmenu-push').toggleClass('pushmenu-push-toright');
+			$menuLeft.toggleClass('pushmenu-open');
+		});
+	});
+	</script>
+
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Comfortaa"/>
+
+</head>
+
+
+
+
+
+<!--HTML sheet-->
+<body>
+<body class="pushmenu-push">
+  <nav class="pushmenu pushmenu-left">
+    <h3>Menu</h3>
+    <a href="mycalendar.html">My Calendar</a>
+    <a href="School2.html">My Schools</a>
+    <a href="Page2.html">My Tests</a>
+	<a href="about us.html">About Us</a> 
+   
+  </nav>
+  
+<div class="container">
+        <div class="main">
+        <section class="buttonset">
+            <div id="nav_list">Menu</div>
+        </section>
+      
+    <section class="content">
+   
+      
+    </section><!-- End Content -->
+
+  </div><!-- End Main -->
+</div><!-- End Container --> 
+</body>
+
+
+<script src='menu.js'></script>
+
+</html>
